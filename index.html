@@ -5,7 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Janice Ying – Digital Contact Card</title>
   <style>
-    body { font-family: sans-serif; padding: 2em; text-align: center; }
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 2em;
+    }
+    .logo {
+      max-width: 180px;
+      margin-bottom: 1em;
+    }
+    .contact-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: inline-block;
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      margin: 0.5em 0 0.2em;
+    }
+    p {
+      margin: 0.2em 0 1em;
+    }
     a.button {
       background: #0073e6;
       color: white;
@@ -17,8 +41,13 @@
   </style>
 </head>
 <body>
-  <h1>Janice Ying</h1>
-  <p>HR & Admin Manager<br>Sincere Watch Limited</p>
-  <p><a class="button" href="JaniceYing.vcf" download>Download Contact</a></p>
+  <div class="contact-card">
+    <img src="logo.png" alt="Sincere Watch Logo" class="logo">
+    <h1>Janice Ying</h1>
+    <p>HR & Admin Manager<br>Sincere Watch Limited</p>
+    <p>
+      <a class="button" href="JaniceYing.vcf" download>Download Contact</a>
+    </p>
+  </div>
 </body>
 </html>
